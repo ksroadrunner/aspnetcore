@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "/Users/roadrunner/.dotnet/store/|arch|/|tfm|",
+      "/Users/roadrunner/.nuget/packages"
+    ]
+  }
+}
