@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BookStore.Application.Abstractions\BookStore.Application.Abstractions.csproj" />
+    <ProjectReference Include="..\..\Domain\BookStore.Domain\BookStore.Domain.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\BookStore.Persistence\BookStore.Persistence.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Test\" />
+    <None Remove="User\" />
+    <None Remove="Microsoft.EntityFrameworkCore" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Test\" />
+    <Folder Include="User\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.11" />
+  </ItemGroup>
+</Project>

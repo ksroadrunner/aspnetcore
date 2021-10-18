@@ -1,0 +1,30 @@
+﻿@model string[]
+@inject BookStore.Application.Abstractions.Test.ISingletonService singleton1
+@inject BookStore.Application.Abstractions.Test.ISingletonService singleton2
+
+@inject BookStore.Application.Abstractions.Test.ITransientService transient1
+@inject BookStore.Application.Abstractions.Test.ITransientService transient2
+
+@inject BookStore.Application.Abstractions.Test.IScopedService scoped1
+@inject BookStore.Application.Abstractions.Test.IScopedService scoped2
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h1>
+    Singleton
+</h1>
+<p>@singleton1.Generate()</p>
+<p>@singleton2.Generate()</p>
+
+<h1>
+    Transient
+</h1>
+<p>@transient1.Generate()</p>
+<p>@transient2.Generate()</p>
+
+<h1>
+    Scoped
+</h1>
+<p>@scoped1.Generate()</p>
+<p>@scoped2.Generate()</p>

@@ -1,0 +1,29 @@
+﻿@model string[]
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h1>
+    Singleton
+</h1>
+@{ print(Model[0..2]); }
+
+<h1>
+    Transient
+</h1>
+@{ print(Model[2..4]); }
+
+<h1>
+    Scoped
+</h1>
+@{ print(Model[4..]); }
+
+@functions {
+    void print(string[] arr)
+    {
+        foreach (var item in arr)
+        {
+            <p>@item</p>
+        }
+    }
+}
