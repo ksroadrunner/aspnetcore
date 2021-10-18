@@ -1,1 +1,1 @@
-# aspnetcore
+Caner Sarıgül - KS İzmir Asp.Net Core Eğitimi
